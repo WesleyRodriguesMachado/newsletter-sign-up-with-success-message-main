@@ -3,11 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Roboto;
-   /* list-style: none; */
-}
-
-.hide {
-  display: none;
+  /* list-style: none; */
 }
 
 body {
@@ -23,6 +19,7 @@ body {
   display: flex;
   border-radius: 30px;
   padding: 2rem;
+  color: #36384e;
 }
 
 .container h1 {
@@ -34,7 +31,6 @@ body {
 .container p {
   text-align: left;
   margin: 2rem 0;
- 
 }
 
 .container main {
@@ -42,26 +38,94 @@ body {
   margin: 2rem 2rem;
 }
 
-.container ul{
-    margin-bottom: 3rem;
-    line-height: 2.5rem;
-    list-style: url(../images/icon-list.svg);
-    list-style-position: outside;
-    
+.container ul {
+  margin-bottom: 3rem;
+  line-height: 2.5rem;
+  list-style: none;
 }
 
+.container ul li img {
+  margin-right: 10px;
+  margin-bottom: -5px;
+}
 
-/* 
-.container ul li::before{
-    content: '';
-    background-image: url(../images/icon-list.svg);
-    background-repeat: no-repeat;
-    background-position:top ;
-    width: 22px;
-    height: 21px;
-    display: inline-block;
-    margin-right: 10px;
-    
-} */
+.container form {
+  display: flex;
+  flex-direction: column;
+}
 
+.container form label {
+  font-weight: bold;
+  color: #242742;
+  margin-bottom: 10px;
+}
+.container .validation {
+  display: flex;
+  justify-content: space-between;
+}
 
+#msgInvalid {
+  color: #ff6257;
+  font-weight: bold;
+}
+
+.container input {
+  padding: 15px;
+   border: 1px solid #ccc; 
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.email-invalid {
+  background-color: #ff62573b;
+  border: 1px solid #ff6257 !important;
+  color: #ff6257 ;
+  
+}
+
+.container #btnSubscribe,
+.container-sucess #btnDimiss {
+  padding: 15px;
+  background-color: #242742;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container #btnSubscribe:hover,
+.container-sucess #btnDimiss:hover {
+  background-color: #ff6257;
+}
+
+.hide {
+  display: none;
+}
+
+.container-sucess {
+  background-color: #fff;
+  border-radius: 30px;
+  color: #242742;
+  max-width: 430px;
+  padding: 3rem;
+}
+
+.container-sucess img {
+  margin-bottom: 1rem;
+}
+
+.container-sucess h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.container-sucess p {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.container-sucess p span {
+  font-weight: 800;
+}
